@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ragnarok Fitness Club | Transformación Real</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero { 
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                  url('https://i.postimg.cc/T1CBJ5b9/Screenshot-20260517-020225-Chrome.png') center/cover no-repeat; 
+    }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; }
+    .modal-content { max-width: 420px; background: #1f2937; border-radius: 20px; padding: 30px; }
+    .btn-plan { transition: all 0.3s; }
+    .btn-plan:hover { transform: translateY(-3px); }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans">
+
+  <!-- NAVEGACIÓN -->
+  <nav class="bg-black border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="https://i.postimg.cc/T1CBJ5b9/Screenshot-20260517-020225-Chrome.png" alt="Ragnarok Logo" class="h-12 w-12 object-contain rounded-full">
+        <span class="text-3xl font-bold text-blue-500">RAGNAROK</span>
+        <span class="text-white font-semibold">FITNESS CLUB</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#inicio" class="hover:text-blue-400">Inicio</a>
+        <a href="#nosotros" class="hover:text-blue-400">Nosotros</a>
+        <a href="#paquetes" class="hover:text-blue-400">Paquetes</a>
+        <a href="#resultados" class="hover:text-blue-400">Resultados</a>
+        <a href="#testimonios" class="hover:text-blue-400">Testimonios</a>
+        <a href="#faq" class="hover:text-blue-400">Preguntas Frecuentes</a>
+      </div>
+      <a href="https://wa.me/qr/S2PYGMZVEMYXP1" target="_blank" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-full text-sm font-semibold flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp"></i> Contactar
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero text-white py-28 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">RAGNAROK FITNESS CLUB</h1>
+      <p class="text-2xl md:text-3xl mb-6">El centro de transformación física</p>
+      <p class="text-xl mb-10">Samuel Morelo & Yordan Guío</p>
+      <a href="#paquetes" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xl px-10 py-5 rounded-full inline-block">VER PAQUETES</a>
+    </div>
+  </header>
+
+  <!-- NOSOTROS + MISIÓN VISIÓN -->
+  <section id="nosotros" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-white">Quiénes Somos</h2>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto text-center mb-16">
+        Somos <strong>Samuel Morelo</strong> y <strong>Yordan Guío</strong>, entrenadores personales con <strong>4 años de experiencia</strong>.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-800 p-8 rounded-3xl text-center">
+          <h3 class="text-blue-400 text-2xl font-bold mb-4">Misión</h3>
+          <p class="text-gray-400">Guiar a personas apasionadas a transformar su cuerpo y estilo de vida mediante asesorías virtuales personalizadas, adaptándonos a cualquier entorno: casa, gimnasio o parques.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-3xl text-center">
+          <h3 class="text-blue-400 text-2xl font-bold mb-4">Visión</h3>
+          <p class="text-gray-400">Convertirnos en el centro de acondicionamiento físico de referencia en Colombia, donde cada persona logre su mejor versión con disciplina y consistencia.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-3xl text-center">
+          <h3 class="text-blue-400 text-2xl font-bold mb-4">Objetivos</h3>
+          <ul class="text-left text-gray-400 space-y-3">
+            <li>• Lograr cambios físicos y mentales reales</li>
+            <li>• Enseñar hábitos sostenibles de entrenamiento y nutrición</li>
+            <li>• Adaptarnos a la realidad de cada persona</li>
+            <li>• Crear una comunidad comprometida con su bienestar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAQUETES -->
+  <section id="paquetes" class="py-20 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4 text-white">Nuestros Paquetes</h2>
+      <p class="text-center text-gray-400 mb-12">Elige la duración que mejor se adapte a ti</p>
+
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- Sin Plan Alimenticio -->
+        <div class="bg-gray-900 rounded-3xl p-8 border border-gray-700">
+          <h3 class="text-2xl font-bold text-center mb-8 text-blue-400">Sin Plan Alimenticio</h3>
+          <div class="space-y-4">
+            <button onclick="showPlanModal('Sin Alimenticio', '1 Mes', '100000')" class="w-full btn-plan bg-gray-800 hover:bg-gray-700 border border-blue-500 text-white font-bold py-4 rounded-2xl">$100.000 — 1 Mes</button>
+            <button onclick="showPlanModal('Sin Alimenticio', '3 Meses', '250000')" class="w-full btn-plan bg-gray-800 hover:bg-gray-700 border border-blue-500 text-white font-bold py-4 rounded-2xl">$250.000 — 3 Meses</button>
+            <button onclick="showPlanModal('Sin Alimenticio', '6 Meses', '500000')" class="w-full btn-plan bg-gray-800 hover:bg-gray-700 border border-blue-500 text-white font-bold py-4 rounded-2xl">$500.000 — 6 Meses</button>
+            <button onclick="showPlanModal('Sin Alimenticio', '12 Meses', '850000')" class="w-full btn-plan bg-gray-800 hover:bg-gray-700 border border-blue-500 text-white font-bold py-4 rounded-2xl">$850.000 — 12 Meses</button>
+          </div>
+        </div>
+
+        <!-- Con Plan Alimenticio -->
+        <div class="bg-gradient-to-br from-blue-900 to-gray-900 rounded-3xl p-8 border-2 border-blue-500 relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-sm font-bold px-8 py-1 rounded-full">RECOMENDADO</div>
+          <h3 class="text-2xl font-bold text-center mb-8 text-white">Con Plan Alimenticio</h3>
+          <div class="space-y-4">
+            <button onclick="showPlanModal('Con Alimenticio', '1 Mes', '150000')" class="w-full btn-plan bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl">$150.000 — 1 Mes</button>
+            <button onclick="showPlanModal('Con Alimenticio', '3 Meses', '400000')" class="w-full btn-plan bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl">$400.000 — 3 Meses</button>
+            <button onclick="showPlanModal('Con Alimenticio', '6 Meses', '750000')" class="w-full btn-plan bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl">$750.000 — 6 Meses</button>
+            <button onclick="showPlanModal('Con Alimenticio', '12 Meses', '1400000')" class="w-full btn-plan bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl">$1.400.000 — 12 Meses</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="planModal" class="modal">
+    <div class="modal-content">
+      <h3 id="modalTitle" class="text-2xl font-bold mb-1"></h3>
+      <p id="modalPrice" class="text-4xl font-bold text-blue-400 mb-6"></p>
+      
+      <ul class="space-y-3 text-gray-300 mb-8">
+        <li class="flex items-start"><span class="text-green-400 mr-2">✓</span> Plan de entrenamiento personalizado</li>
+        <li class="flex items-start"><span class="text-green-400 mr-2">✓</span> Seguimiento semanal por WhatsApp</li>
+        <li class="flex items-start"><span class="text-green-400 mr-2">✓</span> Ajustes según tu progreso</li>
+        <li class="flex items-start"><span class="text-green-400 mr-2">✓</span> Videollamadas de revisión</li>
+        <li class="flex items-start"><span class="text-green-400 mr-2">✓</span> Soporte continuo</li>
+      </ul>
+
+      <button onclick="contactWhatsApp()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-2xl text-lg mb-3">
+        Contactar por WhatsApp
+      </button>
+      <button onclick="closeModal()" class="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 rounded-2xl">
+        Elegir otro plan
+      </button>
+    </div>
+  </div>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Resultados Reales</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div><img src="https://i.postimg.cc/Y0nyWKcT/Screenshot-20260517-020011-Instagram.png" alt="Transformación 1" class="w-full h-80 object-cover rounded-3xl"></div>
+        <div><img src="https://i.postimg.cc/6QnS1mR4/Screenshot-20260517-020026-Instagram.png" alt="Transformación 2" class="w-full h-80 object-cover rounded-3xl"></div>
+        <div><img src="https://i.postimg.cc/wT4StJgT/Screenshot-20260517-020041-Instagram.png" alt="Transformación 3" class="w-full h-80 object-cover rounded-3xl"></div>
+        <div><img src="https://i.postimg.cc/wT4StJgT/Screenshot-20260517-020041-Instagram.png" alt="Transformación 4" class="w-full h-80 object-cover rounded-3xl"></div>
+        <div><img src="https://i.postimg.cc/T1CBJ5b9/Screenshot-20260517-020225-Chrome.png" alt="Transformación 5" class="w-full h-80 object-cover rounded-3xl"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="py-20 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Lo que dicen nuestros clientes</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-8 rounded-3xl">
+          <p class="italic">"Perdí 8 kilos en 3 meses y mantengo los resultados. El seguimiento es excelente."</p>
+          <div class="mt-6 font-semibold text-blue-400">- Laura Martínez, Bogotá</div>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-3xl">
+          <p class="italic">"Los planes se adaptan perfecto a mi horario. Ya tengo más energía y fuerza."</p>
+          <div class="mt-6 font-semibold text-blue-400">- Andrés Camacho, Medellín</div>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-3xl">
+          <p class="italic">"Después del embarazo necesitaba algo flexible. Ragnarok fue la mejor decisión."</p>
+          <div class="mt-6 font-semibold text-blue-400">- Camila Rodríguez, Cali</div>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-3xl">
+          <p class="italic">"El plan alimenticio me cambió la vida. Bajé grasa y gané músculo."</p>
+          <div class="mt-6 font-semibold text-blue-400">- Juan Pablo Ríos, Bogotá</div>
+        </div>
+        <div class="bg-gray-900 p-8 rounded-3xl">
+          <p class="italic">"Siempre pendientes y corrigiendo mi técnica. Muy profesionales."</p>
+          <div class="mt-6 font-semibold text-blue-400">- Daniela Soto, Barranquilla</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section id="faq" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Preguntas Frecuentes</h2>
+      <div class="space-y-4">
+        **Summary:**
+¿Cómo funcionan las asesorías virtuales? <span class="text-blue-400">▼</span>
+          <p class="mt-4 text-gray-400">Todo funciona por WhatsApp y videollamadas. Recibes tu plan personalizado, seguimiento semanal y ajustes según tu progreso.</p>
+        **Summary:**
+¿Necesito gimnasio o equipo especial? <span class="text-blue-400">▼</span>
+          <p class="mt-4 text-gray-400">No. Adaptamos los entrenamientos a tu casa, parque o gimnasio básico.</p>
+        **Summary:**
+¿Cuántos días entreno por semana? <span class="text-blue-400">▼</span>
+          <p class="mt-4 text-gray-400">Entre 3 y 5 sesiones según tu nivel, objetivos y disponibilidad.</p>
+        **Summary:**
+¿Se puede pagar en cuotas? <span class="text-blue-400">▼</span>
+          <p class="mt-4 text-gray-400">Sí, tenemos flexibilidad de pago. Escríbenos y te explicamos las opciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="bg-blue-700 py-20 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">¿Listo para comenzar tu transformación?</h2>
+      <p class="text-xl mb-10">Agenda tu llamada de descubrimiento gratuita.</p>
+      <a href="https://wa.me/qr/S2PYGMZVEMYXP1" target="_blank" class="bg-white text-blue-700 font-bold text-xl px-12 py-6 rounded-full inline-flex items-center gap-3 hover:bg-gray-100">
+        <i class="fa-brands fa-whatsapp text-3xl"></i> ESCRIBIR POR WHATSAPP
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-black py-12 text-center text-gray-500">
+    <p class="text-2xl font-bold text-white mb-2">RAGNAROK FITNESS CLUB</p>
+    <p>Samuel Morelo & Yordan Guío • 4 años de experiencia • Bogotá, Colombia</p>
+    <p class="mt-6">© 2026 Todos los derechos reservados</p>
+  </footer>
+
+  <!-- SCRIPT DEL MODAL -->
+  <script>
+    let currentPlan = "";
+    let currentPrice = "";
+
+    function showPlanModal(type, duration, price) {
+      currentPlan = `${type} - ${duration}`;
+      currentPrice = price;
+      
+      document.getElementById('modalTitle').textContent = currentPlan;
+      document.getElementById('modalPrice').textContent = `\[ {price} COP`;
+      document.getElementById('planModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('planModal').style.display = 'none';
+    }
+
+    function contactWhatsApp() {
+      const message = encodeURIComponent(`Hola! Estoy interesado en el plan: ${currentPlan} por \]{currentPrice} COP. Quiero más información y empezar. Gracias!`);
+      window.open(`https://wa.me/qr/S2PYGMZVEMYXP1?text=${message}`, '_blank');
+      closeModal();
+    }
+
+    // Cerrar modal al hacer clic fuera
+    document.getElementById('planModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+  </script>
+</body>
+</html>
